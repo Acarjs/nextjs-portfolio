@@ -2,11 +2,12 @@
 
 import React from 'react';
 import Image from 'next/image';
-import profilePic from '@/public/anil.png';
+// import profilePic from '@/public/anil.png';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
   return (
@@ -22,9 +23,11 @@ export default function Intro() {
             }}
           >
             <Image
-              src={profilePic}
+              src="/anil.png"
               alt="My Photo"
               quality="95"
+              width={192}
+              height={192}
               priority={true}
               className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-x1"
             />
@@ -45,7 +48,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -55,22 +58,47 @@ export default function Intro() {
         <span className="font-bold">1 year</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{' '}
         <span className="underline">React(Next.js)</span>.
-      </motion.p>
+      </motion.h1>
 
-      <div>
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition "
         >
-          Contact me here <BsArrowRight />
+          Contact me here{' '}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
-          Download Resume <HiDownload />{' '}
+
+        <a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          href="/CV.pdf"
+          download
+        >
+          Download Resume{' '}
+          <HiDownload className="opacity-60 group-hover:translate-x-2 transition " />{' '}
         </a>
-        <a className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full">
+
+        <a
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.25] hover:scale-125  hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10"
+          href="https://linkedin.com/in/anil-acar-cz"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
-      </div>
+
+        <a
+          className="bg-white text-gray-700 p-4 flex items-center gap-2 rounded-full text-[1.1rem] focus:scale-110 hover:scale-[1.25] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10 "
+          href="https://github.com/Acarjs"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
+      </motion.div>
     </section>
   );
 }
