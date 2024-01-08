@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-// import profilePic from '@/public/anil.png';
+import profilePic from '@/public/anil.png';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
@@ -23,7 +23,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/anil.png"
+              src={profilePic}
               alt="My Photo"
               quality="95"
               width={192}
