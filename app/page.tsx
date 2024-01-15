@@ -9,6 +9,7 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
+
       <Projects />
     </main>
   );
