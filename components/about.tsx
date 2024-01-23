@@ -30,31 +30,18 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a master degree in{' '}
-        <span className="font-medium">Structural Engineering</span>, I decided
-        to pursue my passion for programming. I enrolled in a coding bootcamp
-        and learned{' '}
-        <span className="font-medium">full-stack web development</span>.{' '}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{' '}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{' '}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{' '}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{' '}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        As a web developer, I started working as{' '}
+        <span className="font-medium">Frontend Developer</span> on a web
+        development project of a big pharma brand, using web development
+        technologies daily such as{' '}
+        <span className="font-medium">Astro.js, React and TypeScript</span> .
+        Before that, I volunteered 1+ years of my time to gain professional
+        level experience as a self-taught full-stack web developer.
+        Additionally, I attended an intensive coding bootcamp where I spent over
+        420 hours focusing on essential web development skills. In addition to
+        my web development experience, I also have 2+ years of IT Technical
+        Support experience targeted to learn the ability to simplify, manage and
+        resolve problems in a professional and timely manner.
       </p>
     </motion.section>
   );
