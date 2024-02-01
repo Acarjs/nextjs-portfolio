@@ -48,7 +48,7 @@ export default function Contact() {
           className="h-52 my-3 rounded-lg borderBlack p-4"
           name="message"
           placeholder="Your message"
-          maxLength={500}
+          maxLength={5000}
         />
         <button
           type="submit"
