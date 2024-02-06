@@ -5,13 +5,15 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import React from 'react';
+import React, { useContext } from 'react';
 import SectionHeading from './section-heading';
 import { experiencesData } from '@/lib/data';
 import useSectionInView from '@/lib/hooks';
+import { useTheme } from '@/context/theme-context';
 
 export default function Experience() {
   const { ref } = useSectionInView('Experience');
+  const { theme } = useTheme();
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
@@ -35,13 +37,20 @@ export default function Experience() {
               date={item.date}
               icon={item.icon}
               iconStyle={{
-                background: 'rgb(240, 240, 240) ',
+                background:
+                  theme === 'dark'
+                    ? 'rgb(120, 120, 120)'
+                    : 'rgb(240, 240, 240) ',
                 fontSize: '1.5rem',
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
+              <h3 className="font-semibold capitalize dark:text-gray-700">
+                {item.title}
+              </h3>
+              <p className="font-normal !mt-0 dark:text-gray-700">
+                {item.location}
+              </p>
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-gray-600">
                 {item.description}
               </p>
             </VerticalTimelineElement>
