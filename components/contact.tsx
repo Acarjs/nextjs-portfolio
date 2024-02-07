@@ -22,7 +22,7 @@ export default function Contact() {
       // viewport={{ once: true }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="text-gray-700 -mt-3">
+      <p className="text-gray-700 -mt-3 dark:text-gray-200">
         Please contact me directly at{' '}
         <a className="underline" href="mailto:anil.acar@hotmail.com">
           anil.acar@hotmail.com
@@ -41,18 +41,17 @@ export default function Contact() {
           }
           toast.success('Email sent succussfully!');
         }}
-        // action={sendEmail} //this also works
       >
         <input
           type="email"
           name="senderEmail"
           required
           maxLength={500}
-          className="h-14 rounded-lg borderBlack p-4"
+          className="h-14 rounded-lg borderBlack p-4 dark:text-gray-900 dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all"
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:text-gray-900 dark:bg-white dark:bg-opacity-90 dark:focus:bg-opacity-100 transition-all"
           name="message"
           placeholder="Your message"
           maxLength={5000}

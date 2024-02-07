@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import React, { useContext } from 'react';
+import React from 'react';
 import SectionHeading from './section-heading';
 import { experiencesData } from '@/lib/data';
 import useSectionInView from '@/lib/hooks';
@@ -24,33 +24,39 @@ export default function Experience() {
             <VerticalTimelineElement
               visible={true}
               contentStyle={{
-                background: 'rgb(240, 240, 240)',
+                background:
+                  theme === 'light'
+                    ? 'rgb(240, 240, 240)'
+                    : 'rgba(255, 255, 255, 0.05)',
                 boxShadow: 'none',
-                border: '1px solid rgba(0, 0, 0, 0.05)',
+                border: '1px solid rgba(0, 0, 0, 0.5)',
                 borderRadius: '1rem',
                 textAlign: 'left',
                 padding: '1.3rem 2rem',
               }}
               contentArrowStyle={{
-                borderRight: '1rem solid rgb(120, 120, 120)',
+                borderRight:
+                  theme === 'light'
+                    ? '1rem solid rgb(120, 120, 120)'
+                    : '1rem solid rgba(255, 255, 255, 0.8)',
               }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
                 background:
                   theme === 'dark'
-                    ? 'rgb(120, 120, 120)'
+                    ? 'rgba(255, 255, 255, 0.1)'
                     : 'rgb(240, 240, 240) ',
                 fontSize: '1.5rem',
               }}
             >
-              <h3 className="font-semibold capitalize dark:text-gray-700">
+              <h3 className="font-semibold capitalize dark:text-white">
                 {item.title}
               </h3>
-              <p className="font-normal !mt-0 dark:text-gray-700">
+              <p className="font-normal !mt-0 dark:text-white/75">
                 {item.location}
               </p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-gray-600">
+              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
             </VerticalTimelineElement>
