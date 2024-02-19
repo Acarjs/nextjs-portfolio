@@ -5,7 +5,7 @@ import Image from 'next/image';
 import profilePic from '@/public/anil.png';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { BsArrowDown, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import useSectionInView from '@/lib/hooks';
@@ -88,8 +88,8 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{' '}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
+          Contact me{' '}
+          <BsArrowDown className="opacity-90 group-hover:translate-x-2 transition" />
         </Link>
 
         <a

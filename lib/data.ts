@@ -4,7 +4,7 @@ import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import eaglesNestImg from '@/public/eaglesnest.png';
 import portfolioImg from '@/public/portfolio.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+import playwrightImg from '@/public/playwright.png';
 
 export const links = [
   {
@@ -59,6 +59,14 @@ export const experiencesData = [
     icon: React.createElement(FaReact),
     date: '2021 - present',
   },
+  {
+    title: 'Full-Stack Developer',
+    location: 'Houston, TX',
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact),
+    date: '2021 - present',
+  },
 ] as const;
 
 export const projectsData = [
@@ -76,23 +84,24 @@ export const projectsData = [
     description:
       'My portfolio website serves as a digital showcase of my professional background. It provides visitors with an insight into my skills, experience, and projects as a web developer.',
     tags: [
+      'Next.js',
       'React',
       'TypeScript',
-      'Next.js',
+
       'Tailwind',
       'Framer Motion',
       'Resend',
     ],
     imageUrl: portfolioImg,
-    link: 'https://eaglesnest.netlify.app/',
-    codeLink: 'https://github.com/Acarjs/eagles-nest',
+    link: '/',
+    codeLink: '/',
   },
   {
-    title: 'Word Analytics',
+    title: 'Metadata Tagging Creation Automation',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: wordanalyticsImg,
+      'The process automation of collecting data from various pages and integrating it into a campaign metadata tagging creation form. Enhanced efficiency by reducing the required time to complete one creation from 15 minutes to approximately 2 minutes through automation for one creation.',
+    tags: ['Playwright', 'JavaScript', 'TypeScript'],
+    imageUrl: playwrightImg,
   },
 ];
 
