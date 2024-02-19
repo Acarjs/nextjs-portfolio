@@ -38,11 +38,11 @@ export default function Intro() {
               width={192}
               height={192}
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-x1"
+              className="h-25 w-25 rounded-full border-[0.35rem] border-white shadow-x1"
             />
           </motion.div>
           <motion.span
-            className="absolute bottom-0 right-0 text-3xl"
+            className="absolute bottom-0 left-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -52,7 +52,7 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            👋🏼
+            💻
           </motion.span>
         </div>
       </div>
@@ -62,11 +62,16 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Anil.</span> I'm a{' '}
-        <span className="font-bold">frontend web developer</span> with{' '}
-        <span className="font-bold">1 year</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{' '}
-        <span className="underline">React(Next.js)</span>.
+        Hello, My name is
+        <span className="font-bold"> Anil.</span> I'm a{' '}
+        <span className="font-bold"> web developer</span> with{' '}
+        <span className="font-bold">1+ years</span> of experience. I'm
+        passionate about learning
+        <span className="italic"> new things</span>. My focus is{' '}
+        <span className="underline font-bold">
+          JavaScript, TypeScript, React(Next.js)
+        </span>
+        .
       </motion.h1>
 
       <motion.div

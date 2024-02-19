@@ -2,8 +2,8 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
+import eaglesNestImg from '@/public/eaglesnest.png';
+import portfolioImg from '@/public/portfolio.png';
 import wordanalyticsImg from '@/public/wordanalytics.png';
 
 export const links = [
@@ -40,7 +40,7 @@ export const experiencesData = [
     description:
       'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
     icon: React.createElement(LuGraduationCap),
-    // icons: <LuGraduationCap />, //we can also write this if it is .tsx file instead of .ts file
+    // icon: <LuGraduationCap />, //we can also write this if it is .tsx file instead of .ts file
     date: '2019',
   },
   {
@@ -63,18 +63,29 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: "Eagle's Nest E-Shop",
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: corpcommentImg,
+      'This is E-commerce website project, selling jerseys, t-shirts, casual clothes. It serves as a platform to showcase the products to potential customers.',
+    tags: ['JavaScript', 'React', 'Firebase', 'Stripe', 'Auth0', 'Formspree'],
+    imageUrl: eaglesNestImg,
+    link: 'https://eaglesnest.netlify.app/',
+    codeLink: 'https://github.com/Acarjs/eagles-nest',
   },
   {
-    title: 'rmtDev',
+    title: 'Portfolio Website',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: rmtdevImg,
+      'My portfolio website serves as a digital showcase of my professional background. It provides visitors with an insight into my skills, experience, and projects as a web developer.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind',
+      'Framer Motion',
+      'Resend',
+    ],
+    imageUrl: portfolioImg,
+    link: 'https://eaglesnest.netlify.app/',
+    codeLink: 'https://github.com/Acarjs/eagles-nest',
   },
   {
     title: 'Word Analytics',
@@ -83,7 +94,7 @@ export const projectsData = [
     tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
     imageUrl: wordanalyticsImg,
   },
-] as const;
+];
 
 export const skillsData = [
   'HTML',
