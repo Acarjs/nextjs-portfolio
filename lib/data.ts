@@ -2,6 +2,7 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
+import { SiOracle, SiIbm } from 'react-icons/si';
 import eaglesNestImg from '@/public/eaglesnest.png';
 import portfolioImg from '@/public/portfolio.png';
 import playwrightImg from '@/public/playwright.png';
@@ -35,37 +36,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
-    description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: React.createElement(LuGraduationCap),
+    title: 'Publicis Group | Kindred. s.r.o.',
+    position: 'Frontend Developer',
+    description: `•	Designing various web-based assets, creating components in React for a iconic pharma brand. •	Enhanced efficiency by reducing the required time to complete one creation from 15 minutes to approximately 2 minutes through automation for one creation.`,
+    icon: React.createElement(FaReact),
     // icon: <LuGraduationCap />, //we can also write this if it is .tsx file instead of .ts file
-    date: '2019',
+    date: 'Nov 2023 - Present',
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
+    title: 'Oracle | Netsuite Global Services (Brno - Czech Republic)',
+    position: 'Technical Support Engineer',
     description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+      '•	Be trained to provide technical support to NetSuite customers in SuiteCloud customization platform by consulting their SuiteScript codes, which are written in JavaScript.',
+    icon: React.createElement(SiOracle),
+    date: 'Oct 2023 - Nov 2023',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2021 - present',
+    title: 'Data4you z.s. - Coding Bootcamp Praha (Prague - Czech Republic) ',
+    position: 'Graduated bootcamp',
+    description: `•	Full-stack Web Development – Certificate (420+ hours)`,
+    icon: React.createElement(LuGraduationCap),
+    date: 'Jan 2023 - Aug 2023',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2021 - present',
+    title: 'Kyndryl | IBM Client Center s.r.o. (Brno - Czech Republic)',
+    position: 'IT Backup Administrator (2nd Level)',
+    description: `•	Performed backup data management for clients and server infrastructure, •	Maintained IBM TSM servers.`,
+    icon: React.createElement(SiIbm),
+    date: 'Jan 2023 - Aug 2023',
+  },
+  {
+    title: 'Kyndryl | IBM Client Center s.r.o. (Brno - Czech Republic)',
+    position: 'IT Support Specialist (1st Level) ',
+    description: `•	Awarded Client Dedication Award and 4 times Employee of the Month, 
+    •	Trained/mentored 4 different newcomers,
+    •	Processed the most amount issues(an average of 30 per workday) among all team members in 2021,
+    •	Provided full-capacity Level 1 IT support and resolved the users’ issue when applicable with 99% accuracy to employees of partner companies.`,
+    icon: React.createElement(SiIbm),
+    date: 'Jan 2021 - Dec 2022',
   },
 ] as const;
 

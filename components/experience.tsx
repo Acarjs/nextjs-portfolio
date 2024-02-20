@@ -25,9 +25,7 @@ export default function Experience() {
               visible={true}
               contentStyle={{
                 background:
-                  theme === 'light'
-                    ? 'rgb(240, 240, 240)'
-                    : 'rgba(255, 255, 255, 0.05)',
+                  theme === 'light' ? '#F1EFEF' : 'rgba(255, 255, 255, 0.05)',
                 boxShadow: 'none',
                 border: '1px solid rgba(0, 0, 0, 0.5)',
                 borderRadius: '1rem',
@@ -44,18 +42,14 @@ export default function Experience() {
               icon={item.icon}
               iconStyle={{
                 background:
-                  theme === 'dark'
-                    ? 'rgba(255, 255, 255, 0.1)'
-                    : 'rgb(240, 240, 240) ',
+                  theme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : '#F2F1EB ',
                 fontSize: '1.5rem',
               }}
             >
-              <h3 className="font-semibold capitalize dark:text-white">
-                {item.title}
-              </h3>
-              <p className="font-normal !mt-0 dark:text-white/75">
-                {item.location}
-              </p>
+              <h3 className="font-semibold dark:text-white">{item.title}</h3>
+              <h4 className="font-semibold !mt-1 dark:text-white/90">
+                {item.position}
+              </h4>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>
